@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Conversor de moedas</title>
+  </head>
+  <body>
+    <h1>Conversor de moedas</h1>
+    <label for="val"
+      >Valor:
+      <input type="number" name="val" id="val" step="0.01" />
+    </label>
+    <label for="currency"
+      >De:
+      <input list="currencies" name="currency" id="currency" />
+    </label>
+    <label for="toCurrency"
+      >Para:
+      <input list="currencies" name="toCurrency" id="toCurrency" />
+    </label>
+    <button>Converter</button>
+    <div id="result"></div>
+    <datalist id="currencies">
+      <option value="USD"></option>
+      <option value="EUR"></option>
+      <option value="BRL"></option>
+      <option value="GBP"></option>
+      <option value="CAD"></option>
+      <option value="ARS"></option>
+      <option value="CLP"></option>
+    </datalist>
+  </body>
+  <script src="index.js"></script>
+</html>
